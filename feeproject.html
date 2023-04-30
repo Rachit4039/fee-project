@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project fee</title>
+</head>
+<style>
+    body{
+
+        background-color: rgb(235 231 231);
+    }
+.header{
+    display: flex;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width:40%;
+    max-width: 60%;
+    background-color: rgb(0, 0, 0);
+    height: 2.2cm;
+    margin-left:20%;
+    border-radius: 5cm;
+    justify-content:space-evenly;
+    padding-bottom: 10px;
+
+}
+.header li{
+    margin-right: 15%;
+    /* flex: 1; */
+    display: flex;   /*this aligns apple logo with home etc */
+    float: left;
+    /* list-style: none; */
+    margin: 13px 20px;
+}
+.header li a{
+    padding-top: 14px;
+    text-decoration: none;
+    color: white;
+}
+.header li a:hover{
+    color: rgb(247, 247, 3);
+}
+/* .picture
+{
+    margin-left: 7cm;
+
+
+}
+.pic{
+    display: flex;
+    
+} */
+
+.container
+{
+    border-radius: 2cm;
+    height:250px;
+    width:300px;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition:4s;
+    display: inline-block;
+    animation-name:animate;
+    animation-direction:alternate;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+@keyframes animate{
+    0%{
+        background-image:url(https://img.giznext.com/assets/model/2/11689/apple-iphone-14-16658fe556411249f1c0b1c4b981ea.jpg);
+    }
+    20%{
+        background-image: url(https://img.giznext.com/assets/model/2/11689/apple-iphone-14-3c537ccf10a98ac5b25aaabe41025a.jpg);
+    }
+    40%{
+        background-image: url(https://img.giznext.com/assets/model/2/11689/apple-iphone-14-6586a75e6376d890a63dd390d2427f.jpg);
+    }
+    60%{
+        background-image:url(https://img.giznext.com/assets/model/2/11689/apple-iphone-14-9535845115994f63fb1a48a62afd63.jpg) ;
+    }
+    80%{
+        background-image:url(https://img.giznext.com/assets/model/2/11689/apple-iphone-14-6586a75e6376d890a63dd390d2427f.jpg) ;
+    }
+    100%{
+        background-image:url(https://img.giznext.com/assets/model/2/11689/apple-iphone-14-388bbf7b4f756ef1b4bf31d50404a2.jpg)yce-wraith-4k-hd-h ;
+    }
+
+}
+
+.second{
+    background-image:url(shopping.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 300px;
+    border-radius: 2cm;
+    background-size: 100%;
+    float: right;
+    margin-left: 10px;
+}
+
+
+.third{
+    display: inline-block;
+    background-image:url(https://www.links.hr/content/images/thumbs/015/0150311_smartphone-apple-iphone-14-6-1-6-gb-128-gb-ios-plavi-010301122.jpg);
+    background-repeat: no-repeat;
+    height: 450px;
+    width:300px;
+
+    border-radius: 1.5cm;
+    background-size: 100%;
+    background-color: white; 
+    /* border: 5px solid black; */
+    margin-left: -1cm;
+}
+.fourth{
+    width: 250px;
+    height:200px;
+    border-radius: 1.5cm;
+    background-image: url(https://media.istockphoto.com/id/183252683/photo/waterproof-textile-ii.jpg?s=612x612&w=0&k=20&c=jo4KKz8e7puNVvsBM4bFMIiklIgBC5E3cpj5HcpgBBU=);
+}
+.five{
+    background-image: url(5g.png);
+    width: 250px;
+    height: 220px;
+    float: right;
+    background-size: 100%;
+    border-radius: 1.5cm;
+
+}
+#container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding-left:120px ;
+    border-radius: 1.5cm;
+}
+
+#image img{
+    height: 320px;
+    width: 300px;
+    margin-left: 7cm;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+#texts{
+  font-size: 25px;
+  
+}
+
+#container2 {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding-left: 150px;
+   }
+   
+#image2 img{
+    height: 300px;
+    width: 300px;
+    margin-left: 1cm;
+}
+#texts2{
+    font-size: 25px;
+    margin-left: 7cm;
+    margin-right: 0cm;    
+}
+
+.last
+{
+  margin-top: 1cm;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  height:35%;
+  border:2px  rgb(0, 0, 0);
+  background-color: rgb(201 201 201);
+}
+.last .heading,.last .heading2,.last .heading3
+{
+  margin:40px;
+  display:block;
+}
+.heading ul li
+{
+  padding:15px;
+}
+.heading .a
+{
+  float:left;
+  font-size:30px;
+}
+.heading2 ul li 
+{
+  padding:10px;
+}
+.heading3 input[type=text]
+{
+  margin:30px 0 0 0;
+  padding:15px;
+  border-radius: 1rem;
+  color:rgb(255, 247, 247);
+}
+.heading3 button
+{
+  margin-top:5px;
+  padding:14px;width:200px;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 249);
+}
+.heading3 button:hover{
+  box-shadow:0 0 20px 10px rgb(255, 255, 255);  
+}
+.last .heading3
+{
+  padding-top:8px;
+}
+.copy
+{ 
+  background-color: rgb(0, 0, 0);
+  overflow:hidden;
+}
+.copy span
+{
+  color: aqua;
+  font-size:15px;
+  float:right;
+}
+
+.five:hover
+{
+  border-radius:50px;
+  box-shadow:0 0 20px 10px rgb(124, 121, 109);
+}
+
+.second:hover
+{
+  border-radius:50px;
+  box-shadow:0 0 20px 10px rgb(124, 121, 109);
+}
+
+.container:hover
+{
+  border-radius:50px;
+  box-shadow:5px 5px 20px 10px rgb(124, 121, 109);
+}
+
+.third:hover
+{
+  border-radius:50px;
+  box-shadow:0 0 20px 10px rgb(124, 121, 109);
+}
+.fourth:hover
+{
+  border-radius:50px;
+  box-shadow:0 0 20px 10px rgb(124, 121, 109);
+}
+.heading2 a{
+  text-decoration: none;
+}
+
+
+</style>
+<body>
+    <div class="outer">
+        <div class="header"><ul>
+            <img src="peakpx.jpg" alt="apple logo" style="height: 75px; float: left;">
+            <li style="padding-top:8px ; font-size:x-large; color: white;">iPhone</li>
+            <li><a href="http://127.0.0.1:5500/product%20landing/pl2.html">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/IPhone_14" target="_blank">About Us</a></li>
+            <li><a href="contact.html" target="_blank">Contact us</a></li>
+            <li><a href="buy.html" target="_blank" >Buy Now</a></li>
+            <li><a href="#">Reviews</a></li></ul>
+        </div>
+        <center><img src="https://9to5mac.com/wp-content/uploads/sites/6/2022/09/iphone-14-colors.jpg?quality=82&strip=all" style="border-radius: 1.5cm; margin-top: 1cm; width: 1000px; display: flex;"></center>
+        
+    <div>
+        <h1 style=" padding-left: 35%;"><b>iPhone 14</b> &nbsp; & &nbsp; iPhone 14 Plus</h1>
+        </div>
+    </div>
+    <center>
+    <div style="display: inline-block;" >
+            <div class="container"></div>
+            <div class="second">
+                <h3 style="color: rgb(25, 20, 27); font-family: Verdana, Geneva, Tahoma, sans-serif; padding-left: 60px;">DUAL CAMERA</h3>
+             </div>
+    </div>
+    </center>
+    <center> <!--centres the text of the images ie water resistant -->
+    <div style="display:grid;margin-top: 20px;grid-template-columns: 20rem 20rem 20rem;margin-left: 450px; margin-right: auto;">
+      <!-- display grid and grid-template-columns: 20rem 20rem 20rem= brings big and bigger in same line with water resistant and five g -->
+    <div class="third">
+        <h2 style="padding-left: 10px; padding-top: 260px;">Big & Bigger</h2>
+        <h4 style="padding-left: 0px;">iPhone 14 &emsp; iPhone 14 Plus</h4>
+        <h3 style="padding-left: 0px;">15.40cm &emsp;16.95cm</h3>
+    </div>
+    <div style="flex-direction: column;display: flex;">     <!-- it aligns 5g and water resistant -->
+    <div class="fourth" style="display: inline-block;"> 
+        <h3 style="padding-bottom: 1px; color: rgb(0, 0, 0); font-family: cursive; padding-top:20% ; padding-left:10px ;">Water</h3>
+        <h3 style="padding-top: 1px; color: rgb(0, 0, 0); font-family: cursive;  padding-left:10px ;">resistant</h3>
+    </div>
+    <div class="five" style="display: inline-block;margin-top: 20px;"></div>
+    </div>
+</div></center>
+
+<div id="container" style="white-space:nowrap">
+
+    <div id="image" style="display:inline;">
+        <img src="iPhone-14-midnight.webp"/>
+    </div>
+
+    <div id="texts" class="txt" style="display:inline; "> 
+        <h4>&emsp;&emsp;&emsp;&emsp;FEATURES</h4>
+        <ul> 
+            <li>16.95 cm (6.7″) or 15.40 cm (6.1″)</li>
+            <li>Up to 29 hours video playback2</li>
+            <li>Advanced dual-camera system 12MP Main  </li>
+            <li>A15 Bionic chip with 5-core GPU</li>  
+            <li>Face ID</li>
+            <li>Emergency SOS Crash Detection</li> 
+            <li>Up to 29 hours video playback</li>  
+        </ul>   
+    </div>
+</div>
+
+<div id="container2" style="white-space:nowrap">
+    <div id="texts2" class="txt"  > 
+        <li>17.00 cm (6.7″) or 15.54 cm (6.1″)</li>
+        <li>Up to 29 hours video playback</li>
+        <li>Pro camera system 48MP </li>
+        <li>A16 Bionic chip</li>  
+        <li>Face ID</li>
+        <li>Emergency SOS Crash Detection</li>
+        <li>Up to 26 hours video playback</li>
+    </div>
+    <div id="image2" style="border-radius: 2.5cm; display:inline;">
+        <img src="plus.jpeg" alt="iphone 14 plus">
+    </div>
+</div>
+
+
+
+<footer class="last">
+    <div class="heading">
+    <ul>
+      <li style="font-size:20px; color:rgb(10, 10, 9);" >Address</li>
+      <li>Chitkara University <br>Rajpura,Punjab.</li>
+    </ul>
+    </div>
+    <div class="heading2">
+      <ul>
+        <li  style="font-size:20px; color:rgb(9, 9, 7);" class="b">Some Links</li>
+        <li><a href="https://www.apple.com/in/store">Stores</a></li>
+        <li><a href="https://www.icloud.com/">icloud</a></li>
+        <li><a href="https://www.apple.com/in/legal/sales-support/sales-policies/retail_in.html">Sales Policy</a></li>
+        
+      </ul>
+    </div>
+    <div class="heading2">
+      <ul>
+        <li  style="font-size:20px; color:rgb(0, 0, 0);"  class="b">Some Links</li>
+        <li><a href=https://support.apple.com/en-in/HT201232>Phone numbers</a></li>
+        <li><a href="https://www.apple.com/in/legal/">Legal</a></li>
+        <li><a href=https://www.apple.com/in/privacy/>Privacy</a></li>
+        
+      </ul>
+    </div>
+    <div class="heading3">
+      <ul>
+        <li style="font-size:20px; color:rgb(0, 0, 0);" class="b">Newsletter</li>
+        <li class="b"><input type="text" placeholder="Your email here"></li>
+        <li class="b"><button type="submit">SUBSCRIBE</button></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copy">
+    <span style="padding-right: 20px;">Copyright© 2023 </span>
+  </div>
+  </body>
+</html>
+</body>
+</html>
